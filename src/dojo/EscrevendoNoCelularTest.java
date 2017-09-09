@@ -7,8 +7,10 @@ import org.junit.Test;
 public class EscrevendoNoCelularTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testTecla2UmaVez() {
+		String resultadoTeste = EscrevendoNoCelular.numeroParaLertra("2");
+		assertEquals("A", resultadoTeste);
+
 	}
 
 }
