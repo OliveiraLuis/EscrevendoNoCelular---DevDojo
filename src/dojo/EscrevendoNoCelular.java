@@ -10,7 +10,7 @@ public class EscrevendoNoCelular {
 			// receber o valor dos dois ultimos caracteres
 			teclaAtual = palavra.charAt(i);
 			
-			if(i>0) {
+			if(i>0 || resposta.length() != 0) {
 				teclaAtras 	= palavra.charAt(i-1);
 			}
 			
@@ -19,10 +19,25 @@ public class EscrevendoNoCelular {
 			if(teclaAtual == teclaAtras) {
 				cont++;
 			}
+			
 			// se forem diferentes, imprime o valor da tecla de acordo com a quantidade
 			// de veses que foi pressionada
 			if(i==palavra.length()-1 || (i>0 && teclaAtual != teclaAtras)) {
 				resposta += converteEmCaracter(teclaAtual, cont);
+			}
+			
+			// se já tiver clicado o máximo de vezes
+			// que dá pra clicar em uma tecla
+			else if(
+				(cont == 3 && teclaAtual == '2') || (cont == 3 && teclaAtual == '3') ||
+				(cont == 3 && teclaAtual == '4') || (cont == 3 && teclaAtual == '5') ||
+				(cont == 3 && teclaAtual == '6') || (cont == 4 && teclaAtual == '7') ||
+				(cont == 3 && teclaAtual == '8') || (cont == 4 && teclaAtual == '9') ||
+				(cont == 1 && teclaAtual == '0')
+			  ) {
+				resposta += converteEmCaracter(teclaAtual, cont);
+				cont = 0;
+				teclaAtras = '/';
 			}
 		}
 		return resposta;

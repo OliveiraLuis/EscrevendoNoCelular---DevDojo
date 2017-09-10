@@ -29,6 +29,6 @@ public class EscrevendoNoCelularTest {
 		String resultadoTeste = EscrevendoNoCelular.numeroParaLertra("2222");
 		assertEquals("CA", resultadoTeste);
 
-	}
+	} 
 
 }
