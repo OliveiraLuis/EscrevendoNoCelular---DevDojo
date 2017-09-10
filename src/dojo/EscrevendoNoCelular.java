@@ -54,7 +54,7 @@ public class EscrevendoNoCelular {
 				caracter = 'C'; 
 			}
 		}
-		return caracter;
+		return caracter; 
 		
 	}
 }
