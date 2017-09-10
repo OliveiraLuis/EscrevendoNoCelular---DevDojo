@@ -18,7 +18,7 @@ public class EscrevendoNoCelular {
 			// soma a quantidade de vezes que a tecla foi pressionada
 			if(teclaAtual == teclaAtras) {
 				cont++;
-			}
+			} 
 			
 			// se forem diferentes, imprime o valor da tecla de acordo com a quantidade
 			// de veses que foi pressionada

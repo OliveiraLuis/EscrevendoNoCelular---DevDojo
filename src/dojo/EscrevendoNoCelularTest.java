@@ -66,5 +66,11 @@ public class EscrevendoNoCelularTest {
 		assertEquals("AD", resultadoTeste);
 
 	}
+	@Test
+	public void testCombinacao2333() {
+		String resultadoTeste = EscrevendoNoCelular.numeroParaLertra("2333");
+		assertEquals("AF", resultadoTeste);
+
+	}
 
 }
