@@ -48,6 +48,7 @@ public class EscrevendoNoCelular {
 	
 	public static char converteEmCaracter(char teclaAtual, int cont) {
 		char caracter = '*';
+		// Tecla 2
 		if(teclaAtual == '2') {
 			if(cont == 1) {
 				caracter = 'A';
@@ -57,6 +58,7 @@ public class EscrevendoNoCelular {
 				caracter = 'C'; 
 			}
 		}
+		// Tecla 3
 		else if(teclaAtual == '3') {
 			if(cont == 1) {
 				caracter = 'D';
@@ -64,6 +66,70 @@ public class EscrevendoNoCelular {
 				caracter = 'E';
 			}else if(cont == 3) {
 				caracter = 'F'; 
+			}
+		}
+		// Tecla 4
+		else if(teclaAtual == '4') {
+			if(cont == 1) {
+				caracter = 'G';
+			}else if(cont == 2) {
+				caracter = 'H';
+			}else if(cont == 3) {
+				caracter = 'I'; 
+			}
+		}
+		// Tecla 5
+		else if(teclaAtual == '5') {
+			if(cont == 1) {
+				caracter = 'J';
+			}else if(cont == 2) {
+				caracter = 'K';
+			}else if(cont == 3) {
+				caracter = 'L'; 
+			}
+		}
+		// Tecla 6
+		else if(teclaAtual == '6') {
+			if(cont == 1) {
+				caracter = 'M';
+			}else if(cont == 2) {
+				caracter = 'N';
+			}else if(cont == 3) {
+				caracter = 'O'; 
+			}
+		}
+		// Tecla 7
+		else if(teclaAtual == '7') {
+			if(cont == 1) {
+				caracter = 'P';
+			}else if(cont == 2) {
+				caracter = 'Q';
+			}else if(cont == 3) {
+				caracter = 'R'; 
+			}else if(cont == 4) {
+				caracter = 'S'; 
+			}
+		}
+		// Tecla 8
+		else if(teclaAtual == '8') {
+			if(cont == 1) {
+				caracter = 'T';
+			}else if(cont == 2) {
+				caracter = 'U';
+			}else if(cont == 3) {
+				caracter = 'V'; 
+			}
+		}
+		// Tecla 9
+		else if(teclaAtual == '9') {
+			if(cont == 1) {
+				caracter = 'W';
+			}else if(cont == 2) {
+				caracter = 'X';
+			}else if(cont == 3) {
+				caracter = 'Y'; 
+			}else if(cont == 4) {
+				caracter = 'Z'; 
 			}
 		}
 		
