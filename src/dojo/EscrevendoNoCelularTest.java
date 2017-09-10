@@ -18,5 +18,11 @@ public class EscrevendoNoCelularTest {
 		assertEquals("B", resultadoTeste);
 
 	}
+	@Test
+	public void testTecla2TresVezes() {
+		String resultadoTeste = EscrevendoNoCelular.numeroParaLertra("222");
+		assertEquals("C", resultadoTeste);
+
+	}
 
 }
