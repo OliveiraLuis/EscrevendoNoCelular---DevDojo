@@ -36,7 +36,7 @@ public class EscrevendoNoCelular {
 			}else if(cont == 2) {
 				caracter = 'B';
 			}else if(cont == 3) {
-				caracter = 'C';
+				caracter = 'C'; 
 			}
 		}
 		return caracter;
