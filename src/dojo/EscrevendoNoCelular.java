@@ -54,6 +54,15 @@ public class EscrevendoNoCelular {
 				caracter = 'C'; 
 			}
 		}
+		else if(teclaAtual == '3') {
+			if(cont == 1) {
+				caracter = 'D';
+			}else if(cont == 2) {
+				caracter = 'E';
+			}else if(cont == 3) {
+				caracter = 'F'; 
+			}
+		}
 		
 		return caracter; 
 		

@@ -49,6 +49,18 @@ public class EscrevendoNoCelularTest {
 
 	}
 	@Test
+	public void testTecla3UmaVez() {
+		String resultadoTeste = EscrevendoNoCelular.numeroParaLertra("3");
+		assertEquals("D", resultadoTeste);
+
+	}
+	@Test
+	public void testTecla3NoveVezes() {
+		String resultadoTeste = EscrevendoNoCelular.numeroParaLertra("333333333");
+		assertEquals("FFF", resultadoTeste);
+
+	}
+	@Test
 	public void testCombinacao23() {
 		String resultadoTeste = EscrevendoNoCelular.numeroParaLertra("23");
 		assertEquals("AD", resultadoTeste);
