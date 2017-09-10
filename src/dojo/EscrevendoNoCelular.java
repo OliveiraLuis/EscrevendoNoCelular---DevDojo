@@ -6,7 +6,7 @@ public class EscrevendoNoCelular {
 		char teclaAtual, teclaAtras='/';
 		int cont=1;
 		
-		for(int i=0; i<palavra.length(); i++) {
+		for(int i=0; i<palavra.length(); i++) { 
 			// receber o valor dos dois ultimos caracteres
 			teclaAtual = palavra.charAt(i);
 			
