@@ -24,9 +24,8 @@ public class EscrevendoNoCelular {
 			// de veses que foi pressionada
 			if((i>0 && teclaAtual != teclaAtras)) {
 				resposta += converteEmCaracter(teclaAtras, cont);
-				resposta += converteEmCaracter(teclaAtual, cont);
 			}
-			else if(i==palavra.length()-1) {
+			if(i==palavra.length()-1) {
 				resposta += converteEmCaracter(teclaAtual, cont);
 			}
 			
