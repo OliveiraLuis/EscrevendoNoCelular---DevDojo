@@ -24,9 +24,11 @@ public class EscrevendoNoCelular {
 			// de veses que foi pressionada
 			if((i>0 && teclaAtual != teclaAtras)) {
 				resposta += converteEmCaracter(teclaAtras, cont);
+				cont = 1;
 			}
 			if(i==palavra.length()-1) {
 				resposta += converteEmCaracter(teclaAtual, cont);
+				cont = 0;
 			}
 			
 			// se já tiver clicado o máximo de vezes
@@ -47,7 +49,7 @@ public class EscrevendoNoCelular {
 	}
 	
 	public static char converteEmCaracter(char teclaAtual, int cont) {
-		char caracter = '*';
+		char caracter = '#';
 		// Tecla 2
 		if(teclaAtual == '2') {
 			if(cont == 1) {
@@ -131,6 +133,8 @@ public class EscrevendoNoCelular {
 			}else if(cont == 4) {
 				caracter = 'Z'; 
 			}
+		}else if(teclaAtual == '0') {
+			caracter = ' ';
 		}
 		
 		return caracter; 

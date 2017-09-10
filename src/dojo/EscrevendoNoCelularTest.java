@@ -78,5 +78,11 @@ public class EscrevendoNoCelularTest {
 		assertEquals("ADGJMPTW", resultadoTeste);
 
 	}
+	@Test
+	public void testCombinacao203304440507777() {
+		String resultadoTeste = EscrevendoNoCelular.numeroParaLertra("203304440507777");
+		assertEquals("A E I J S", resultadoTeste);
+
+	}
 
 }
