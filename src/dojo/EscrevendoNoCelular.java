@@ -3,7 +3,7 @@ package dojo;
 public class EscrevendoNoCelular {
 	public static String numeroParaLertra(String palavra) {
 		String resposta = new String();
-		char teclaAtual, teclaAtras='-';
+		char teclaAtual, teclaAtras='/';
 		int cont=1;
 		
 		for(int i=0; i<palavra.length(); i++) {
@@ -21,7 +21,7 @@ public class EscrevendoNoCelular {
 			}
 			// se forem diferentes, imprime o valor da tecla de acordo com a quantidade
 			// de veses que foi pressionada
-			else if(teclaAtual != teclaAtras) {
+			if(i==palavra.length()-1 || (i>0 && teclaAtual != teclaAtras)) {
 				resposta += converteEmCaracter(teclaAtual, cont);
 			}
 		}
@@ -29,10 +29,12 @@ public class EscrevendoNoCelular {
 	}
 	
 	public static char converteEmCaracter(char teclaAtual, int cont) {
-		char caracter = '-';
+		char caracter = '*';
 		if(teclaAtual == '2') {
 			if(cont == 1) {
 				caracter = 'A';
+			}else if(cont == 2) {
+				caracter = 'B';
 			}
 		}
 		return caracter;
